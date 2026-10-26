@@ -9,7 +9,7 @@ const imageSets = {
       ['images/libro-2-01.jpg', '01'], ['images/libro-2-02.jpg', '02'], ['images/libro-2-03.jpg', '03'], ['images/libro-2-04.jpg', '04'], ['images/libro-2-05.jpg', '05'], ['images/libro-2-06.jpg', '06'], ['images/libro-2-07.jpg', '07'], ['images/libro-2-08.jpg', '08'], ['images/libro-2-09.jpg', '09'], ['images/libro-2-10.jpg','10']
   ],
   zine: [
-    ['photo-1519608487953-e999c86e7455','Cielo nocturno en azul profundo'],['photo-1500534314209-a25ddb2bd429','Dunas bajo el sol'],['photo-1464822759023-fed622ff2c3b','Montañas al horizonte'],['photo-1500534623283-312aade485b7','Paisaje abierto'],['photo-1518837695005-2083093ee35b','Mar en calma'],['photo-1501785888041-af3ef285b470','Lago desde la montaña'],['photo-1472214103451-9374bd1c798e','Llanuras verdes'],['photo-1500530855697-b586d89ba3ee','Figura en un paisaje amplio'],['photo-1470252649378-9c29740c9fa8','Luz cálida entre la niebla'],['photo-1470770841072-f978cf4d019e','Reflejo en el lago']
+      ['images/zine-01.jpg', '01'], ['images/zine-02.jpg', '02'], ['images/zine-03.jpg', '03'], ['images/zine-04.jpg', '04'], ['images/zine-05.jpg', '05'], ['images/zine-06.jpg', '06'], ['images/zine-07.jpg', '07'], ['images/zine-08.jpg', '08'], ['images/zine-09.jpg', '09'], ['images/zine-10.jpg', '10']
   ]
 };
 
