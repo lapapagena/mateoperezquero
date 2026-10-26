@@ -3,7 +3,7 @@ document.querySelectorAll('#year').forEach(node => { node.textContent = new Date
 // Cambia estas imágenes de muestra por los archivos del fotógrafo. Cada proyecto muestra diez fotos.
 const imageSets = {
   'libro-1': [
-        ['images/libro-1-01.jpg', '01'], ['images/libro-1-02.jpg', '02'], ['images/libro-1-03.jpg','03'],['photo-1472214103451-9374bd1c798e','Colinas verdes bajo las nubes'],['photo-1519681393784-d120267933ba','Montaña bajo un cielo nocturno'],['photo-1501785888041-af3ef285b470','Valle y lago desde la montaña'],['photo-1500534623283-312aade485b7','Paisaje abierto bajo una luz suave'],['photo-1464822759023-fed622ff2c3b','Cordillera recortada contra el cielo'],['photo-1500534314209-a25ddb2bd429','Dunas de arena al atardecer']
+      ['images/libro-1-01.jpg', '01'], ['images/libro-1-02.jpg', '02'], ['images/libro-1-03.jpg', '03'], ['images/libro-1-04.jpg', '04'], ['images/libro-1-05.jpg', '05'], ['images/libro-1-06.jpg', '06'], ['images/libro-1-07.jpg', '07'], ['images/libro-1-08.jpg', '08'], ['images/libro-1-09.jpg', '09'], ['images/libro-1-10.jpg', '10']
   ],
   'libro-2': [
       ['images/libro-2-01.jpg', '01'], ['images/libro-2-02.jpg', '02'], ['images/libro-2-03.jpg', '03'], ['images/libro-2-04.jpg', '04'], ['images/libro-2-05.jpg', '05'], ['images/libro-2-06.jpg', '06'], ['images/libro-2-07.jpg', '07'], ['images/libro-2-08.jpg', '08'], ['images/libro-2-09.jpg', '09'], ['images/libro-2-10.jpg','10']
