@@ -1,10 +1,10 @@
 # Portfolio de Mateo Pérez Quero
 
-Sitio estático con páginas separadas para Al final de la escalera, Lightshores, Bound for the fields, skies and mountains, Bio y Tienda. Cada proyecto abre su propia página con una composición distinta; las tres galerías presentan diez imágenes de gran formato y permiten abrirlas en el visor. El menú es fijo en escritorio y se convierte en una barra superior en móvil. Los iconos de correo e Instagram están al pie del menú.
+Sitio estático con páginas separadas para Al final de la escalera, Lightshores, Bound for the skies, fields and mountains, Bio y Tienda. Cada proyecto abre su propia página con una composición distinta; las tres galerías presentan diez imágenes de gran formato y permiten abrirlas en el visor. El menú es fijo en escritorio y se convierte en una barra superior en móvil. Los iconos de correo e Instagram están al pie del menú.
 
 ## Personalizar
 
-1. Los títulos, años y descripciones ya están colocados en `Al final de la escalera.html`, `Lightshores.html` y `Bound for the fields, skies and mountains.html`. `index.html` redirige al primer proyecto porque GitHub Pages necesita un `index.html` como punto de entrada.
+1. Los títulos, años y descripciones ya están colocados en `Al final de la escalera.html`, `Lightshores.html` y `Bound for the skies, fields and mountains.html`. `index.html` redirige al primer proyecto porque GitHub Pages necesita un `index.html` como punto de entrada.
 2. Las galerías cargan diez imágenes locales cada una: `images/libro-1-01.jpg` a `images/libro-1-10.jpg`, `images/libro-2-01.jpg` a `images/libro-2-10.jpg` y `images/zine-01.jpg` a `images/zine-10.jpg`. Copia las fotos con esos nombres dentro de una carpeta `images/` en la raíz.
 3. En `bio.html`, coloca el retrato en `images/retrato.jpg`. La biografía proporcionada ya está incorporada.
 4. En `tienda.html`, coloca las cubiertas en `images/libro-1.jpg`, `images/libro-2.jpg` e `images/zine.jpg`. Las tres publicaciones aparecen como disponibles y no se publican precios. Los botones de encargo abren un correo ya dirigido al correo de contacto.
@@ -23,7 +23,7 @@ Las tipografías sans serif DM Sans y DM Mono acompañan el carácter retro del 
 ## Páginas
 
 - `index.html`: redirección a la galería inicial; GitHub Pages la necesita como entrada.
-- `Al final de la escalera.html`, `Lightshores.html`, `Bound for the fields, skies and mountains.html`: páginas individuales de proyecto.
+- `Al final de la escalera.html`, `Lightshores.html`, `Bound for the skies, fields and mountains.html`: páginas individuales de proyecto.
 - `bio.html`: biografía y retrato.
 - `tienda.html`: publicaciones y enlaces para encargarlas por correo.
 - `styles.css`: diseño, adaptación móvil y mosaico de imágenes.
