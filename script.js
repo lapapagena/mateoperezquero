@@ -34,8 +34,9 @@ if (dialog) {
     lightboxImage.alt = image.alt;
     const project = button.closest('.project-page');
     const projectName = project?.querySelector('h1')?.textContent || button.closest('.product')?.querySelector('h2')?.textContent || 'Fotografía';
+    const isProductPhoto = Boolean(button.closest('.product'));
     const number = button.querySelector('.photo-index')?.textContent || String(activeIndex + 1).padStart(2, '0');
-    lightboxCaption.textContent = `${projectName} · ${number}`;
+    lightboxCaption.textContent = isProductPhoto ? projectName : `${projectName} · ${number}`;
     if (lightboxCount) lightboxCount.textContent = `${String(activeIndex + 1).padStart(2, '0')} / ${String(activePhotos.length).padStart(2, '0')}`;
   }
 
