@@ -10,6 +10,47 @@
 
 .product-meta{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin:17px 0 7px}.product-meta h2{margin:0;flex:1;min-width:0}.availability{flex:none;font:9px var(--sans);letter-spacing:.06em;text-transform:uppercase;color:#555}
 
+/* Give the second book and the zine their own image rhythms. */
+.project-page[data-project="libro-2"] .photo:nth-child(5n+1){grid-column:1/span 5;margin-top:0}
+.project-page[data-project="libro-2"] .photo:nth-child(5n+2){grid-column:7/span 6;margin-top:clamp(70px,9vw,130px)}
+.project-page[data-project="libro-2"] .photo:nth-child(5n+3){grid-column:2/span 8;margin-top:0}
+.project-page[data-project="libro-2"] .photo:nth-child(5n+4){grid-column:9/span 4;margin-top:clamp(55px,7vw,105px)}
+.project-page[data-project="libro-2"] .photo:nth-child(5n){grid-column:1/span 7;margin-top:20px}
+.project-page[data-project="zine"] .photo:nth-child(5n+1){grid-column:3/span 6;margin-top:0}
+.project-page[data-project="zine"] .photo:nth-child(5n+2){grid-column:9/span 4;margin-top:clamp(45px,7vw,105px)}
+.project-page[data-project="zine"] .photo:nth-child(5n+3){grid-column:1/span 8;margin-top:10px}
+.project-page[data-project="zine"] .photo:nth-child(5n+4){grid-column:8/span 5;margin-top:clamp(60px,8vw,120px)}
+.project-page[data-project="zine"] .photo:nth-child(5n){grid-column:4/span 7;margin-top:0}
+.product-details{margin:0 0 16px;padding:0;list-style:none;color:#555;font:9px/1.7 var(--sans);letter-spacing:.025em}
+.product-details li{margin:0}
+.first-project-footer{justify-content:flex-end}
+@media(max-width:620px){
+  .top-brand{justify-content:center;padding:0}
+  .top-brand img{object-position:center}
+  .content{margin:0;padding:0}
+  .project-page,.shop-page{padding-top:25px}
+  .project-head{padding:0 18px;margin-bottom:22px}
+  .project-head h1{font-size:clamp(27px,8vw,36px);line-height:1.2}
+  .project-head h1.long-title{font-size:clamp(20px,6vw,27px);overflow-wrap:anywhere}
+  .project-description{font-size:12px;line-height:1.75}
+  .masonry{display:flex;flex-direction:column;align-items:stretch;gap:20px;padding:0 0 12px}
+  .masonry .photo,.project-page[data-project="libro-2"] .masonry .photo,.project-page[data-project="zine"] .masonry .photo{width:100%;max-width:none;margin:0!important;grid-column:auto!important}
+  .masonry .photo img{width:100%;height:auto;max-height:none;object-fit:cover}
+  .photo-index{opacity:1;right:13px;bottom:12px}
+  .page-footer{padding:18px;gap:15px;align-items:flex-start}
+  .page-footer a{max-width:48%;line-height:1.6}
+  .bio-layout{padding:24px 18px 45px;align-items:stretch}
+  .bio-portrait{width:100%;max-width:100%}
+  .bio-portrait img{width:100%;height:auto;max-height:none}
+  .bio-copy h1{font-size:42px}
+  .shop-page .project-head{margin-bottom:24px}
+  .shop-grid{grid-template-columns:1fr;gap:34px;padding:0 18px}
+  .product .photo{aspect-ratio:4/5}
+  .product-meta h2{font-size:16px}
+  .product-details{font-size:10px;line-height:1.8}
+  .shop-note{margin:30px 18px}
+}
+
 /* Fixed transparent masthead logo */
 .top-brand{height:118px;display:flex;justify-content:flex-start;align-items:center;padding-left:0;overflow:hidden;background:transparent;position:relative;z-index:6}.top-brand a{display:block;width:min(405px,33vw);height:112px}.top-brand img{display:block;width:100%;height:100%;object-fit:contain;object-position:left center}.sidebar{top:118px;height:calc(100vh - 118px);padding-top:25px}.sidebar>.logo-link{display:none}.content{padding-top:6px}.mobile-brand{display:none}
 @media(max-width:620px){.top-brand{height:91px;padding-left:0;background:transparent}.top-brand a{width:min(345px,63vw);height:88px}.sidebar{position:sticky;top:0;height:auto;padding:9px 16px 7px}.content{padding-top:0}.mobile-brand{display:none}}

@@ -1,16 +1,10 @@
 document.querySelectorAll('#year').forEach(node => { node.textContent = new Date().getFullYear(); });
 
-// Cambia estas imágenes de muestra por los archivos del fotógrafo. Cada proyecto muestra diez fotos.
+// Cada ruta local corresponde a una foto del proyecto. Mantén diez imágenes por galería.
 const imageSets = {
-  'libro-1': [
-      ['images/libro-1-01.jpg', '01'], ['images/libro-1-02.jpg', '02'], ['images/libro-1-03.jpg', '03'], ['images/libro-1-04.jpg', '04'], ['images/libro-1-05.jpg', '05'], ['images/libro-1-06.jpg', '06'], ['images/libro-1-07.jpg', '07'], ['images/libro-1-08.jpg', '08'], ['images/libro-1-09.jpg', '09'], ['images/libro-1-10.jpg', '10']
-  ],
-  'libro-2': [
-      ['images/libro-2-01.jpg', '01'], ['images/libro-2-02.jpg', '02'], ['images/libro-2-03.jpg', '03'], ['images/libro-2-04.jpg', '04'], ['images/libro-2-05.jpg', '05'], ['images/libro-2-06.jpg', '06'], ['images/libro-2-07.jpg', '07'], ['images/libro-2-08.jpg', '08'], ['images/libro-2-09.jpg', '09'], ['images/libro-2-10.jpg','10']
-  ],
-  zine: [
-      ['images/zine-01.jpg', '01'], ['images/zine-02.jpg', '02'], ['images/zine-03.jpg', '03'], ['images/zine-04.jpg', '04'], ['images/zine-05.jpg', '05'], ['images/zine-06.jpg', '06'], ['images/zine-07.jpg', '07'], ['images/zine-08.jpg', '08'], ['images/zine-09.jpg', '09'], ['images/zine-10.jpg', '10']
-  ]
+  'libro-1': [['images/libro-1-01.jpg','Carta de despedida'],['images/libro-1-02.jpg','Escalera hacia la luz'],['images/libro-1-03.jpg','Habitación en silencio'],['images/libro-1-04.jpg','Paisaje tras la lluvia'],['images/libro-1-05.jpg','Luz sobre una pared'],['images/libro-1-06.jpg','Camino entre sombras'],['images/libro-1-07.jpg','Retrato de un recuerdo'],['images/libro-1-08.jpg','Ventana abierta'],['images/libro-1-09.jpg','Última carta'],['images/libro-1-10.jpg','Umbral de luz']],
+  'libro-2': [['images/libro-2-01.jpg','Luz de costa'],['images/libro-2-02.jpg','Mar en calma'],['images/libro-2-03.jpg','Paseo junto al agua'],['images/libro-2-04.jpg','Refugio junto al mar'],['images/libro-2-05.jpg','Cuaderno de viaje'],['images/libro-2-06.jpg','Orilla iluminada'],['images/libro-2-07.jpg','Tarde de verano'],['images/libro-2-08.jpg','Cielo sobre la costa'],['images/libro-2-09.jpg','Un instante feliz'],['images/libro-2-10.jpg','La última luz']],
+  'zine': [['images/zine-01.jpg','Campo abierto'],['images/zine-02.jpg','Nubes sobre las montañas'],['images/zine-03.jpg','Camino en el bosque'],['images/zine-04.jpg','Ladera bajo el cielo'],['images/zine-05.jpg','Árboles y horizonte'],['images/zine-06.jpg','Pradera en silencio'],['images/zine-07.jpg','Montañas lejanas'],['images/zine-08.jpg','Luz entre las ramas'],['images/zine-09.jpg','Paisaje de ensueño'],['images/zine-10.jpg','Cielo y campo']]
 };
 
 const gallery = document.querySelector('#project-gallery');
@@ -18,9 +12,8 @@ if (gallery) {
   const projectId = document.querySelector('.project-page').dataset.project;
   const images = imageSets[projectId] || [];
   gallery.innerHTML = images.map(([id, alt], index) => {
-    const isUnsplashId = id.startsWith('photo-');
-    const thumb = isUnsplashId ? `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1400&q=85` : id;
-    const full = isUnsplashId ? `https://images.unsplash.com/${id}?auto=format&fit=crop&w=2400&q=92` : id;
+    const thumb = id;
+    const full = id;
     return `<button class="photo" data-full="${full}" aria-label="Ampliar foto ${index + 1}: ${alt}"><img src="${thumb}" alt="${alt}" ${index > 1 ? 'loading="lazy"' : 'fetchpriority="high"'}><span class="photo-index">${String(index + 1).padStart(2,'0')}</span></button>`;
   }).join('');
 }
